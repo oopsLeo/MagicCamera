@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottomsheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_signup_layout"
+    app:behavior_hideable="true"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <TextView
+        android:id="@+id/rubric"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PLEASE SIGN UP"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:fontFamily="@font/regular"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <EditText
+        android:id="@+id/et_signup_username"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/login_edittext"
+        android:drawableStart="@drawable/ic_username"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/regular"
+        android:hint="@string/username"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="#B1B1B1"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/et_signup_email"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/login_edittext"
+        android:drawableStart="@drawable/ic_email"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/regular"
+        android:hint="@string/email"
+        android:inputType="textNoSuggestions"
+        android:paddingLeft="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="#B1B1B1"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/et_signup_password"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/login_edittext"
+        android:drawableStart="@drawable/ic_password_lock"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/regular"
+        android:hint="@string/password"
+        android:inputType="textNoSuggestions|textPassword"
+        android:paddingLeft="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="#B1B1B1"
+        android:textSize="14sp" />
+
+
+
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/login_button"
+        android:fontFamily="@font/regular"
+        android:text="SIGN UP"
+        android:textColor="#FFFFFF"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+
+
+</LinearLayout>

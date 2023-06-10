@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:gravity="center"
+    tools:context=".SplashActivity">
+
+
+    <com.dinuscxj.shootrefreshview.ShootRefreshView
+        android:id="@+id/shoot_logo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center" />
+
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo" />
+
+
+
+    <com.royrodriguez.transitionbutton.TransitionButton
+        android:id="@+id/transition_button"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        app:defaultColor="?attr/colorPrimary"
+        app:loaderColor="?attr/colorSecondary"
+        android:textColor="@android:color/white" />
+
+</FrameLayout>

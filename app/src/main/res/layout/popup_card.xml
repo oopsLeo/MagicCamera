@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.skydoves.elasticviews.ElasticImageView
+        android:id="@+id/card_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_popup_image_radius"
+        android:scaleType="fitXY"
+        app:imageView_duration="300"
+        app:imageView_scale="0.98" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/transparent"
+        android:gravity="center"
+        android:padding="5dp">
+
+        <at.markushi.ui.CircleButton
+            android:id="@+id/popup_delete"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_popop_delete"
+            app:cb_color="#f1f2f6"
+            app:cb_pressedRingWidth="8dip" />
+
+        <at.markushi.ui.CircleButton
+            android:id="@+id/popup_edit"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_edit"
+            app:cb_color="#f1f2f6"
+            app:cb_pressedRingWidth="8dip" />
+
+
+        <com.dd.CircularProgressButton
+            android:id="@+id/popup_save"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginEnd="7dp"
+            android:background="@drawable/circle_shape"
+            android:drawableTop="@drawable/ic_save"
+            android:paddingTop="17dp"
+            app:cpb_colorIndicator="#1e272e"
+            app:cpb_colorProgress="#f1f2f6"
+            app:cpb_cornerRadius="70dp"
+            app:cpb_iconComplete="@drawable/ic_correct"
+            app:cpb_iconError="@drawable/ic_error"
+            app:cpb_selectorIdle="@drawable/idle_state_selector" />
+
+        <at.markushi.ui.CircleButton
+            android:id="@+id/popup_exit"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_exit"
+            app:cb_color="#f1f2f6"
+            app:cb_pressedRingWidth="8dip" />
+
+    </LinearLayout>
+
+</LinearLayout>

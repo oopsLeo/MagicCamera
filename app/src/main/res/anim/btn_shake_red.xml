@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/cycle_interpolator">
+
+    <!-- 背景抖动 -->
+    <translate
+        android:fromXDelta="-5dp"
+        android:toXDelta="5dp"
+        android:repeatMode="reverse"
+        android:repeatCount="5"
+        android:duration="50"/>
+
+
+</set>
+
+

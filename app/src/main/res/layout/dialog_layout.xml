@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog_radius"
+    android:padding="20dp"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/dialog_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Irreversible Deletion"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/dialog_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The action you are about to take cannot be undone."
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/dialog_btn_confirmed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CONFIRMED"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#e17055"/>
+
+    <TextView
+        android:id="@+id/dialog_btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CANCEL"
+        android:textColor="#57606f"
+        android:textSize="12sp"
+        android:padding="10dp"/>
+
+</LinearLayout>

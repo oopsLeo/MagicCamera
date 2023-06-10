@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:paddingStart="15dp"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical">
+    
+    <com.skydoves.elasticviews.ElasticCardView
+        android:id="@+id/elastic_card"
+        android:layout_width="95dp"
+        android:layout_height="130dp"
+        app:cardCornerRadius="8dp">
+
+        <ImageView
+            android:id="@+id/style_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </com.skydoves.elasticviews.ElasticCardView>
+
+    <TextView
+        android:id="@+id/style_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:maxLines="2" />
+
+</LinearLayout>
